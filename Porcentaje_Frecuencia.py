@@ -26,8 +26,8 @@ def graficar_top5_comercios(usuario_id, df):
         .sum()
         #.apply(lambda x: round((x / gasto_total) * 100, 2))
         .reset_index()
-        .rename(columns={'monto': 'gasto_total'})
-        .sort_values(by='gasto_total', ascending=False)
+        .rename(columns={'comercio':'Comercio','monto': 'Gasto Total'})
+        .sort_values(by='Gasto Total', ascending=False)
     )
 
     # Top 5

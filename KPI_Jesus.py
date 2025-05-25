@@ -29,31 +29,7 @@ def graficar_promedio_usuario(ruta_csv, nombre_usuario):
         'Texto': [f"${promedio_semanal:,.2f}", f"${promedio_mensual:,.2f}"]
     })
 
-    fig = px.bar(
-        resumen,
-        x='Monto',
-        y='Tipo',
-        text='Texto',
-        title=f'Gasto semanal y mensual estimado de {nombre_usuario}',
-        color='Tipo',
-        color_discrete_sequence=['#1f77b4', '#ff7f0e']
-    )
-
-    fig.update_traces(
-        textposition='inside',
-        textfont_size=42
-    )
-
-    fig.update_layout(
-        yaxis_title="",
-        xaxis_title="Monto estimado (MXN)",
-        showlegend=False,
-        uniformtext_minsize=12,
-        uniformtext_mode='show',
-        height=500
-    )
-
-    return fig
+    return resumen
 
 
 def graficar_gasto_por_servicio(ruta_csv, nombre_usuario, top_n=5):
@@ -93,7 +69,7 @@ def graficar_gasto_por_servicio(ruta_csv, nombre_usuario, top_n=5):
         resumen_final,
         names='comercio',
         values='monto',
-        title=f"Gasto histórico por comercio - {nombre_usuario} (Top {top_n} + Otros)",
+        title=f"Gasto histórico por comercio",
         hole=0.4
     )
     fig.update_traces(textinfo='label+percent', hovertemplate='%{label}: $%{value:,.2f}<extra></extra>')
