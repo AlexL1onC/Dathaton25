@@ -1,4 +1,4 @@
-# Datathon Hey Banco 2025
+# hey,CashFlow - Datathon Hey Banco 2025
 
 Este repositorio contiene el proyecto desarrollado para el Datathon Hey Banco 2025, cuyo objetivo fue identificar y predecir gastos recurrentes de los usuarios a partir de datos históricos de consumo. La finalidad es ayudar a los usuarios a anticipar sus gastos mensuales y fomentar el ahorro inteligente.
 
