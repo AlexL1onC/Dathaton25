@@ -39,8 +39,13 @@ La aplicación desarrollada con Streamlit permite:
 - Estimar ahorro mensual y anual con base en recomendaciones
 - Mostrar resultados por usuario
 
-  ## Integrantes
-  //Pedro Soto Juárez
-  //Erick Isaac Lascan Otañez
-  //Jesús Daniel Guzmán Valenzuela
-  //Alexei Carrillo Acosta
+## Integrantes
+
+- Pedro Soto Juárez
+
+- Erick Isaac Lascano Otañez
+  
+- Jesús Daniel Guzmán Valenzuela
+  
+- Alexei Carrillo Acosta
+
