@@ -22,11 +22,11 @@ Diseñar una herramienta de predicción de gastos y visualización financiera qu
 
 | Modelo                         | Descripción                           | RMSE    |
 |-------------------------------|----------------------------------------|---------|
-| ARIMA (3,0,0)                 | Modelo autorregresivo clásico          | 20.77   |
-| SARIMA (3,0,0)(1,0,1,12)      | Captura estacionalidad mensual         | 21.54   |
-| ARCH (1)                      | Modela volatilidad en residuos         | 23.73   |
+| ARIMA                  | Modelo autorregresivo clásico          | 20.77   |
+| SARIMA       | Captura estacionalidad mensual         | 21.54   |
+| ARCH                     | Modela volatilidad en residuos         | 23.73   |
 | XGBoost                       | Árboles de decisión optimizados        | 19.50   |
-| LSTM (64 unidades)            | Red neuronal recurrente profunda       | 16.83   |
+| LSTM            | Red neuronal recurrente profunda       | 16.83   |
 
 > El modelo con mejor desempeño fue LSTM, entrenado con una capa de 64 unidades y optimizador Adam.
 
