@@ -40,7 +40,7 @@ La aplicación desarrollada con Streamlit permite:
 - Mostrar resultados por usuario
 
   ## Integrantes
-  Pedro Soto Juárez
-  Erick Isaac Lascan Otañez
-  Jesús Daniel Guzmán Valenzuela
-  Alexei Carrillo Acosta
+  //Pedro Soto Juárez
+  //Erick Isaac Lascan Otañez
+  //Jesús Daniel Guzmán Valenzuela
+  //Alexei Carrillo Acosta
