@@ -7,15 +7,19 @@ Original file is located at
     https://colab.research.google.com/drive/1db0uBGOP45KhDC59Gpk9yJFaXWTiNM67
 """
 
-def ahorro_interes_compuesto_diario(montos_diarios, tasa_anual=0.10, meses=12):
-    dias_totales = meses * 30  # Aproximando cada mes a 30 días
-    tasa_diaria = (1 + tasa_anual) ** (1/365) - 1
+def ahorro_interes_compuesto(monto_mensual, tasa_anual=0.10, meses=12):
+    tasa_mensual = (1 + tasa_anual) ** (1/12) - 1
     historial = []
     ahorro_acumulado = 0
 
-    for i in range(dias_totales):
-        monto = montos_diarios[i] if i < len(montos_diarios) else 0
-        ahorro_acumulado = (ahorro_acumulado + monto) * ( 1 + tasa_diaria)
+    for mes in range(1, meses + 1):
+        ahorro_acumulado = (ahorro_acumulado + monto_mensual) * (1 + tasa_mensual)
         historial.append(round(ahorro_acumulado, 2))
 
     return historial
+
+# Ejecutar con monto = $1000
+ahorros = ahorro_interes_compuesto(1000)
+
+print(f"Ahorro al primer mes: ${ahorros[0]:.2f}")
+print(f"Ahorro total al año: ${ahorros[-1]:.2f}")
